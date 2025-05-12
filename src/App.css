@@ -1,0 +1,164 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Navbar Styles */
+nav {
+  background-color: #1d4ed8; /* Dark blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav .btn {
+  padding: 10px 20px;
+  background-color: #fdba74; /* Light orange */
+  color: white;
+  border-radius: 5px;
+}
+
+nav .btn:hover {
+  background-color: #fb923c; /* Darker orange */
+}
+
+/* Dark Mode Navbar */
+body.dark nav {
+  background-color: #1f2937; /* Darker blue for dark mode */
+}
+
+body.dark nav .btn {
+  background-color: #7c3aed; /* Purple */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(145deg, #f7c77c, #fcf6a4);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1f2937; /* Darker text for better readability */
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #4b5563; /* Lighter text for better readability */
+}
+
+.hero .cta-btn {
+  padding: 12px 24px;
+  background-color: #fdba74;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.125rem;
+}
+
+.hero .cta-btn:hover {
+  background-color: #fb923c;
+}
+
+/* Dark Mode Hero Section */
+body.dark .hero {
+  background: linear-gradient(145deg, #1e2a47, #1f3643); /* Darker gradient for dark mode */
+}
+
+body.dark .hero h2,
+body.dark .hero p {
+  color: #e5e7eb; /* Lighter text for contrast in dark mode */
+}
+
+body.dark .hero .cta-btn {
+  background-color: #7c3aed;
+}
+
+body.dark .hero .cta-btn:hover {
+  background-color: #6b21a8;
+}
+
+/* How It Works Section */
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.how-it-works .step {
+  text-align: center;
+}
+
+.how-it-works .step img {
+  width: 50px;
+  height: 50px;
+}
+
+.how-it-works h3 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Dark Mode How It Works */
+body.dark .how-it-works {
+  background-color: #374151; /* Darker background for dark mode */
+}
+
+body.dark .how-it-works .step h3 {
+  color: #e5e7eb; /* Lighter text for dark mode */
+}
