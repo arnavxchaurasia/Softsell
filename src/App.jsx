@@ -6,7 +6,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import ChatWidget from './components/ChatWidget';
-import './app.css';
+import './App.css';
 // import './ChatWidget.css'; 
 
 const App = () => {
